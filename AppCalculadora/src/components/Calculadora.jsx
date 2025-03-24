@@ -47,7 +47,7 @@ const Calculadora = () => {
             <br/>
             <button onClick={handleMult}>Multiplicar</button>
             <br/>
-            {result !== null && <p>Resultado: {result}</p>}
+            {result !== null && <h1>Resultado: {result}</h1>}
         </div>
     );
 

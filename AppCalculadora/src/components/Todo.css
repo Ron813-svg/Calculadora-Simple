@@ -1,0 +1,114 @@
+/* Fondo con efecto parallax */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    background: url('tu-imagen-de-fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: gradienteGlow 6s infinite ease-in-out;
+}
+
+
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación de hover (efecto neon) */
+@keyframes hoverGlow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+}
+
+.todo-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: transparent; 
+    color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease-in-out, gradienteGlow 6s infinite ease-in-out;
+}
+
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.todo-input button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff; 
+    background-color: transparent; 
+    border: 0.5px solid #e6e6e6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: fadeIn 1.6s ease-in-out;
+}
+
+.todo-input button:hover {
+    color: #000000;
+    background-color: #ffffff;
+    animation: hoverGlow 0.5s infinite alternate;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    animation: fadeIn 1.8s ease-in-out;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.todo-container h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: fadeIn 1.4s ease-in-out, hoverGlow 6s infinite ease-in-out;
+}
