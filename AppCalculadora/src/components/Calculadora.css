@@ -6,7 +6,7 @@
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -14,7 +14,7 @@
 .calculadora h1 {
     margin-bottom: 20px;
     font-size: 1.8rem;
-    color: #333;
+    color: #363636;
 }
 
 .calculadora input {
@@ -22,27 +22,28 @@
     padding: 10px;
     margin-bottom: 15px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #e6e6e6;
     border-radius: 5px;
     box-sizing: border-box;
-    background-color: #cecdcd;
-    color: #333;
+    background-color: #ffffff;
+    color: #111111;
     font-weight: bold;
 }
 
 .calculadora button {
     padding: 10px 20px;
     font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
+    color: #080808;
+    background-color: #ffffff;
+    border: 0.5px solid #e6e6e6;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .calculadora button:hover {
-    background-color: #0056b3;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 .calculadora p {
